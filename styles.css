@@ -41,7 +41,7 @@ html {
 /*********************************/
 
 ::-webkit-scrollbar {
-  width: 2rem;
+  width: 1.3rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -79,13 +79,13 @@ html {
 .nav-menu a,
 .sm-menu a {
   color: var(--color-brand--1);
-  font-size: 4rem;
+  font-size: 3.2rem;
   text-decoration: none;
   font-family: "Efandi-other", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .sm-menu a img {
-  height: 3rem;
+  height: 2.4rem;
 }
 
 /*********************************/
@@ -146,13 +146,13 @@ html {
 
 .text-content-1 {
   position: absolute;
-  top: 50%;
   margin: 0 auto;
   z-index: 10;
   width: 40%;
   font-size: 2.5rem;
   text-align: left;
-  font-weight: 700;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .efandi-content-1 {
@@ -289,6 +289,7 @@ html {
   left: 73%;
   top: 10rem;
   display: flex;
+  padding: 1.3rem;
 }
 
 .venue-text {
@@ -388,6 +389,11 @@ footer {
 
 footer a {
   color: var(--color-light--2);
+}
+
+footer a:hover {
+  color: var(--color-brand--1);
+  transition: 0.5s;
 }
 
 footer div img {
