@@ -75,7 +75,6 @@ html {
 
 .sm-menu a img {
   height: 3rem;
-  width: fit-content;
 }
 
 /*********************************/
@@ -381,5 +380,4 @@ footer a {
 
 footer div img {
   height: 2rem;
-  width: fit-content;
 }
