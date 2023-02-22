@@ -1,0 +1,23 @@
+/* 
+
+1366px HD-ready screens
+
+*/
+
+/*******************************/
+/* BELOW 1360px (Smaller desktops) */
+/*******************************/
+
+@media (max-width: 85em) {
+  .venues-logos {
+    padding: 25rem 20rem 5rem 30rem;
+  }
+
+  .venue-banner {
+    left: 65%;
+  }
+
+  .efandi-content-1 {
+    height: 78rem;
+  }
+}

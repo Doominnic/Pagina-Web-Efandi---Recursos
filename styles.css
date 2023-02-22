@@ -88,6 +88,8 @@ html {
   height: 2.4rem;
 }
 
+/* RESPONSIVE QUERIES */
+
 /*********************************/
 /* HERO SECTION */
 /*********************************/
@@ -139,13 +141,13 @@ html {
 .section-content-1 {
   height: 100vh;
   background-color: var(--color-brand--1);
-  position: relative;
+  overflow: hidden;
   max-width: 220rem;
   width: 100%;
+  position: relative;
 }
 
 .text-content-1 {
-  position: absolute;
   margin: 0 auto;
   z-index: 10;
   width: 35%;
@@ -153,13 +155,18 @@ html {
   text-align: left;
   font-weight: 600;
   line-height: 1.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .efandi-content-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  height: 104rem;
+  width: 2458rem;
+  background: url(2/CopyFondo.png) repeat-x;
+  animation: move 30s linear infinite;
+  background-size: contain;
 }
 
 .banner {
@@ -173,10 +180,10 @@ html {
 
 @keyframes move {
   0% {
-    transform: translateX(65%);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-70%);
+    transform: translate3d(-819rem, 0, 0);
   }
 }
 
