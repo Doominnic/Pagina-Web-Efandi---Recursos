@@ -58,7 +58,7 @@ html {
 
 .sticky-nav {
   height: 12rem;
-  background-color: var(--color-dark--1);
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,9 +94,18 @@ html {
 /* HERO SECTION */
 /*********************************/
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
 .hero-section {
-  background-color: var(--color-dark--1);
-  min-height: 100hv;
+  background-color: transparent;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
