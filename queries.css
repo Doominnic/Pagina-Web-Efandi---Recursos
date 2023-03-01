@@ -27,8 +27,8 @@
 /*******************************/
 
 @media (max-width: 72em) {
-  .venues-logos {
-    padding: 25rem 15rem 5rem 15rem;
+  html {
+    font-size: 56.25%;
   }
 }
 
@@ -37,13 +37,17 @@
 /*******************************/
 
 @media (max-width: 60em) {
+  html {
+    font-size: 43.75%;
+  }
+
   .venues-logos {
     padding: 25rem 15rem 5rem 15rem;
     grid-template-columns: repeat(2, 1fr);
   }
 
   .venue-banner {
-    left: 50%;
+    left: 55%;
   }
 
   .text-content-1 {
@@ -57,5 +61,27 @@
 
   .efandi-content-1 {
     height: 60rem;
+  }
+
+  .venues-logos a img {
+    width: 14rem;
+  }
+}
+
+/*******************************/
+/* BELOW 448px (Smaller desktops) */
+/*******************************/
+
+@media (max-width: 28em) {
+  .venues-logos a img {
+    width: 10rem;
+  }
+
+  .venue-banner {
+    left: 30%;
+  }
+
+  .section-content-1 {
+    height: 50vh;
   }
 }
