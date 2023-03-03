@@ -23,7 +23,7 @@
 }
 
 /*******************************/
-/* BELOW 1152px (Smaller desktops) */
+/* BELOW 1152px (Landscape tablets) */
 /*******************************/
 
 @media (max-width: 72em) {
@@ -33,7 +33,7 @@
 }
 
 /*******************************/
-/* BELOW 960px (Smaller desktops) */
+/* BELOW 960px (Tablets) */
 /*******************************/
 
 @media (max-width: 60em) {
@@ -59,6 +59,10 @@
     height: 70vh;
   }
 
+  .section-content-2 {
+    height: 70vh;
+  }
+
   .efandi-content-1 {
     height: 60rem;
   }
@@ -69,10 +73,14 @@
 }
 
 /*******************************/
-/* BELOW 448px (Smaller desktops) */
+/* BELOW 448px (Phones) */
 /*******************************/
 
 @media (max-width: 28em) {
+  html {
+    font-size: 37.5%;
+  }
+
   .venues-logos a img {
     width: 10rem;
   }
