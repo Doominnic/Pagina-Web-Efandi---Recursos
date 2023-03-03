@@ -88,7 +88,7 @@
   .venues-logos {
     padding: 5rem 2.5rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2.5rem;
+    grid-gap: 1rem;
   }
 
   .venue-text {
@@ -96,7 +96,7 @@
   }
 
   .venues-logos a img {
-    width: 8rem;
+    max-width: 100%;
   }
 
   .efandi-content-1 {
