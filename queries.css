@@ -81,12 +81,31 @@
     font-size: 37.5%;
   }
 
+  .banner-venues {
+    height: 15rem;
+  }
+
+  .venues-logos {
+    padding: 25rem 5rem 5rem 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+  }
+
+  .venue-text {
+    font-size: 9rem;
+  }
+
   .venues-logos a img {
-    width: 10rem;
+    width: 8rem;
+  }
+
+  .efandi-content-1 {
+    height: 45rem;
   }
 
   .venue-banner {
     left: 30%;
+    height: 12.5rem;
   }
 
   .section-content-1 {
