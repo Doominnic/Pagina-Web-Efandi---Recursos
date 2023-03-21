@@ -8,6 +8,12 @@
 /* BELOW 1360px (Smaller desktops) */
 /*******************************/
 
+@media (max-width: 106em) {
+  .efandi-content-1 {
+    height: 80rem;
+  }
+}
+
 @media (max-width: 85em) {
   .venues-logos {
     padding: 25rem 20rem 5rem 20rem;
