@@ -237,20 +237,62 @@ header {
 
 .section-content-2 {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
-  height: 100vh;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  height: 120vh;
   max-width: 220rem;
   width: 100%;
 }
 
-.small-container {
-  background-image: url("3/ImagenEjemplo.png");
-  background-size: cover;
+.grid-6 {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  filter: grayscale(100%) brightness(50%);
+}
+
+.small-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding: 10rem;
+  z-index: 1;
+}
+
+.img-1 {
+  background-image: url("Fotos/CLOSE\ -\ Zoom.jpg");
+  background-size: cover;
+  filter: grayscale(100%) brightness(50%);
+}
+
+.img-2 {
+  background-image: url("Fotos/Deepday\ Aniversario.jpg");
+  background-size: cover;
+  filter: grayscale(100%) brightness(50%);
+}
+
+.img-3 {
+  background-image: url("Fotos/Madradio\ -\ Efandi\ x\ Lata.jpg");
+  background-size: cover;
+  filter: grayscale(100%) brightness(50%);
+}
+
+.img-4 {
+  background-image: url("Fotos/MadradioMichaelJacksonThriller40.jpg");
+  background-size: cover;
+  filter: grayscale(100%) brightness(50%);
+}
+
+.img-5 {
+  background-image: url("Fotos/SundayDTX.jpg");
+  background-size: cover;
+  filter: grayscale(100%) brightness(50%);
+}
+
+.img-6 {
+  background-image: url("Fotos/VideoClub.jpg");
+  background-size: cover;
+  filter: grayscale(100%) brightness(50%);
 }
 
 .small-container:hover {
@@ -259,11 +301,14 @@ header {
   transition: ease-in-out 0.75s;
 }
 
-.small-container p {
+.grid-6 p {
   color: var(--color-light--2);
   font-size: 3rem;
   text-align: left;
   font-weight: 300;
+  position: relative;
+  z-index: 2;
+  margin-left: 10rem;
 }
 
 /*********************************/
@@ -283,7 +328,7 @@ header {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   grid-gap: 9rem;
-  padding: 25rem 30rem 5rem 30rem;
+  padding: 25rem 30rem 15rem 30rem;
   margin-top: -18rem;
 }
 
@@ -304,6 +349,7 @@ header {
   filter: brightness(0.8) sepia(1) saturate(350%) hue-rotate(360deg);
 }
 
+/*
 .banner-venues {
   font-size: 2.5rem;
   color: var(--color-light--2);
@@ -334,6 +380,7 @@ header {
   }
 }
 
+
 @keyframes banner-animation {
   from {
     transform: translateX(0%);
@@ -342,6 +389,7 @@ header {
     transform: translateX(-150%);
   }
 }
+*/
 
 .venue-banner {
   width: 80rem;

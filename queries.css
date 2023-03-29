@@ -10,7 +10,7 @@
 
 @media (max-width: 106em) {
   .efandi-content-1 {
-    height: 105rem;
+    height: 75rem;
   }
 }
 
@@ -28,7 +28,7 @@
   }
 
   .efandi-content-1 {
-    height: 87rem;
+    height: 75rem;
   }
 }
 
@@ -38,7 +38,7 @@
 
 @media (max-width: 80em) {
   .efandi-content-1 {
-    height: 80rem;
+    height: 70rem;
   }
 }
 
@@ -58,7 +58,7 @@
 
 @media (max-width: 64em) {
   .efandi-content-1 {
-    height: 80rem;
+    height: 70rem;
   }
 }
 
