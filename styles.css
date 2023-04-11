@@ -52,6 +52,10 @@ html {
   background-color: #080e13;
 }
 
+#sndFrame {
+  background-color: #0012ff;
+}
+
 /*********************************/
 /* HEADER */
 /*********************************/
@@ -195,7 +199,7 @@ header {
 }
 
 .efandi-content-1 {
-  height: 104rem;
+  height: 80rem;
   width: 2458rem;
   background: url(2/CopyFondo.png) repeat-x;
   animation: move 30s linear infinite;

@@ -28,7 +28,7 @@
   }
 
   .efandi-content-1 {
-    height: 75rem;
+    height: 80rem;
   }
 }
 
@@ -38,7 +38,7 @@
 
 @media (max-width: 80em) {
   .efandi-content-1 {
-    height: 70rem;
+    height: 75rem;
   }
 }
 
@@ -94,7 +94,7 @@
   }
 
   .efandi-content-1 {
-    height: 60rem;
+    height: 70rem;
   }
 
   .venues-logos a img {
@@ -140,7 +140,7 @@
   }
 
   .efandi-content-1 {
-    height: 60rem;
+    height: 70rem;
   }
 
   .venue-banner {
