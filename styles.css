@@ -67,12 +67,12 @@ header {
 }
 
 .sticky-nav {
-  height: 14rem;
+  height: 6rem;
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 6rem;
+  padding: 2rem 4rem;
   max-width: 220rem;
   width: 100%;
 }
@@ -81,16 +81,21 @@ header {
 .sm-menu {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 4rem;
   z-index: 10;
+}
+
+.nav-menu {
+  gap: 12rem;
 }
 
 .nav-menu a,
 .sm-menu a {
   color: var(--color-brand--1);
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   text-decoration: none;
   font-family: "Efandi-other", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.2rem;
 }
 
 .sm-menu a img {
@@ -125,7 +130,7 @@ header {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.97);
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-  height: 10rem;
+  height: 6rem;
   z-index: 10;
   padding: 0;
   transition: 650ms;
@@ -146,6 +151,7 @@ header {
   width: fit-content;
   margin-top: -1rem;
   filter: grayscale(100) contrast(0) brightness(0.3);
+  transform: translateX(-70%);
 }
 
 /*********************************/
@@ -301,7 +307,7 @@ header {
 }
 
 .img-2 {
-  background-image: url("Fotos/Deepday\ Aniversario.jpg");
+  background-image: url("Fotos/2.jpg");
   background-size: cover;
   filter: grayscale(100%) brightness(50%);
 }
@@ -313,7 +319,7 @@ header {
 }
 
 .img-4 {
-  background-image: url("Fotos/MadradioMichaelJacksonThriller40.jpg");
+  background-image: url("Fotos/rombolab.jpg");
   background-size: cover;
   filter: grayscale(100%) brightness(50%);
 }
@@ -338,7 +344,8 @@ header {
 
 .grid-6 p {
   color: var(--color-light--2);
-  font-size: 3rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
   text-align: left;
   font-weight: 300;
   position: relative;
@@ -358,6 +365,9 @@ header {
   width: 100%;
   overflow: hidden;
   height: 100vh;
+  position: relative;
+  justify-content: center;
+  padding-left: 5rem;
 }
 
 .venues-logos {
@@ -366,6 +376,11 @@ header {
   grid-gap: 9rem;
   padding: 25rem 30rem 15rem 30rem;
   margin-top: -18rem;
+  position: absolute;
+  top: 10rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .venues-logos a {
@@ -376,7 +391,7 @@ header {
 
 .venues-logos a img {
   height: fit-content;
-  width: 15rem;
+  width: 10rem;
   cursor: pointer;
   object-fit: contain;
 }
@@ -441,11 +456,24 @@ header {
 
 .venue-text {
   color: var(--color-brand--2);
-  font-size: 12rem;
-  animation: banner-venue-animation 5s linear infinite forwards;
+  font-size: 60rem;
+  /*animation: banner-venue-animation 5s linear infinite forwards;*/
   font-family: "Efandi-pixel", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  letter-spacing: 0.3rem;
 }
 
+.venue-text-s {
+  color: var(--color-brand--1);
+  font-size: 5rem;
+  /*animation: banner-venue-animation 5s linear infinite forwards;*/
+  font-family: "Efandi-pixel", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  text-align: left;
+  margin-bottom: -6rem;
+}
+
+/*
 @-webkit-keyframes banner-venue-animation {
   from {
     -webkit-transform: translateX(0%);
@@ -465,6 +493,7 @@ header {
     transform: translateX(-100%);
   }
 }
+*/
 
 /*********************************/
 /* FOURTH SECTION CONTENT */
