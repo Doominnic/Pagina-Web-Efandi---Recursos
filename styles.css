@@ -36,6 +36,43 @@ html {
   font-family: "Efandi", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  cursor: none;
+}
+
+.cursor {
+  z-index: 20;
+}
+
+.inner-cursor {
+  width: 2rem;
+  height: 2rem;
+  background-color: #ffde00;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.grow {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor {
+  position: fixed;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+  border: 50%;
+  pointer-events: 0.1ms;
+}
+
 /*********************************/
 /* REUSABLE COMPONENTS */
 /*********************************/
@@ -54,6 +91,10 @@ html {
 
 #sndFrame {
   background-color: #0012ff;
+}
+
+a {
+  cursor: none;
 }
 
 /*********************************/
@@ -190,7 +231,6 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -14rem;
 }
 
 .efandi-logo img {
@@ -348,7 +388,7 @@ header {
 
 .small-container:hover {
   filter: grayscale(0%) brightness(100%);
-  cursor: pointer;
+  /*cursor: pointer;*/
   transition: ease-in-out 0.75s;
 }
 
@@ -402,7 +442,7 @@ header {
 .venues-logos a img {
   height: fit-content;
   width: 10rem;
-  cursor: pointer;
+  /*cursor: pointer;*/
   object-fit: contain;
 }
 
