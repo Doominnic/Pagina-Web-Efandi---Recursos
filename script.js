@@ -1,13 +1,13 @@
 // Smooth scrolling animation
 
-const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelector(".nav-menu").querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
     const href = link.getAttribute("href");
 
-    if (href !== "#" && href.startsWith("#")) {
+    if (href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
@@ -18,6 +18,7 @@ allLinks.forEach(function (link) {
 // Sticky navigation //
 
 const sectionHeroEl = document.querySelector(".hero-section");
+const sectionOneEl = document.querySelector(".section-content-1");
 
 const obs = new IntersectionObserver(
   function (entries) {
@@ -48,3 +49,22 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHeroEl);
+
+const obsSectionOne = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (ent.isIntersecting === true) {
+      document.querySelector(".header").classList.add("blue-menu");
+    }
+
+    if (ent.isIntersecting === false) {
+      document.querySelector(".header").classList.remove("blue-menu");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-150px",
+  }
+);
+obsSectionOne.observe(sectionOneEl);
