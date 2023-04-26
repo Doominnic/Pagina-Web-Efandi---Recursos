@@ -57,15 +57,15 @@ body {
 }
 
 .inner-cursor.grow {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   transition: width 0.5s, height 0.5s;
 }
 
 .outer-cursor {
   position: fixed;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   transform: translate(-50%, -50%);
   pointer-events: none;
   mix-blend-mode: difference;
@@ -283,14 +283,18 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: justify;
+  mix-blend-mode: difference;
+  color: yellow;
 }
 
 .efandi-content-1 {
-  height: 80rem;
+  height: 85rem;
   width: 2458rem;
   background: url(2/CopyFondo.png) repeat-x;
   animation: move 30s linear infinite;
   background-size: contain;
+  /*filter: drop-shadow(2px 4px 6px black);*/
+  margin-top: 4.5%;
 }
 
 .banner {
@@ -441,7 +445,7 @@ header {
 
 .venues-logos a img {
   height: fit-content;
-  width: 10rem;
+  width: 9rem;
   /*cursor: pointer;*/
   object-fit: contain;
 }
@@ -511,6 +515,7 @@ header {
   font-family: "Efandi-pixel", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
   letter-spacing: 0.3rem;
+  text-align: center;
 }
 
 .venue-text-s {

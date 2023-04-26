@@ -12,6 +12,10 @@
   .efandi-content-1 {
     height: 80rem;
   }
+
+  .venue-text {
+    font-size: 53rem;
+  }
 }
 
 /*******************************/
@@ -28,7 +32,16 @@
   }
 
   .efandi-content-1 {
-    height: 80rem;
+    height: 75rem;
+    margin-top: 2%;
+  }
+
+  .venue-text {
+    font-size: 45rem;
+  }
+
+  .nav-menu {
+    gap: 10rem;
   }
 }
 
@@ -38,7 +51,16 @@
 
 @media (max-width: 80em) {
   .efandi-content-1 {
-    height: 75rem;
+    height: 80rem;
+    margin-top: 1%;
+  }
+
+  .venue-text {
+    font-size: 40rem;
+  }
+
+  .nav-menu {
+    gap: 8rem;
   }
 }
 
@@ -50,6 +72,10 @@
   html {
     font-size: 56.25%;
   }
+
+  .venue-text {
+    font-size: 35rem;
+  }
 }
 
 /*******************************/
@@ -59,6 +85,18 @@
 @media (max-width: 64em) {
   .efandi-content-1 {
     height: 70rem;
+  }
+
+  .venue-text {
+    font-size: 35rem;
+  }
+
+  .nav-menu {
+    gap: 5rem;
+  }
+
+  .efandi-logo-nav {
+    transform: translateX(-50%);
   }
 }
 
