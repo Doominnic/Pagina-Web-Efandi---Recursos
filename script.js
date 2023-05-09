@@ -97,3 +97,24 @@ links.forEach(link => {
     innerCursor.classList.remove("grow");
   });
 });
+
+//////////////////////////////////////////////////////////////
+// NAV MENU MOBILE
+
+const navMenu = document.querySelector(".header");
+const menuButton = document.querySelectorAll(".mobile-icons");
+const menuLinks = document.querySelector(".nav-menu").querySelectorAll("a");
+
+menuButton.forEach(function (btn) {
+  btn.addEventListener("click", e => {
+    e.preventDefault();
+    navMenu.classList.toggle("nav-menu-open");
+  });
+});
+
+menuLinks.forEach(function (link) {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    navMenu.classList.remove("nav-menu-open");
+  });
+});

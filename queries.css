@@ -1,3 +1,14 @@
+:root {
+  --color-brand--1: #ffde00;
+  --color-brand--2: #0012ff;
+
+  --color-dark--1: #080e13;
+  --color-dark--2: #1a2025;
+  --color-light--1: #aaa;
+  --color-light--2: #f3eaea;
+  --color-light--3: rgb(214, 222, 224);
+}
+
 /* 
 
 1366px HD-ready screens
@@ -111,7 +122,7 @@
 
   .venues-logos {
     padding: 25rem 15rem 5rem 15rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .venue-banner {
@@ -136,7 +147,7 @@
   }
 
   .venues-logos a img {
-    width: 14rem;
+    width: 10rem;
   }
 }
 
@@ -147,6 +158,24 @@
 @media (max-width: 48em) {
   .efandi-content-1 {
     height: 70rem;
+  }
+}
+
+@media (max-height: 38em) {
+  .section-content-2,
+  .section-content-3 {
+    height: 120vh;
+  }
+
+  .section-content-1 {
+    height: 90vh;
+  }
+}
+
+@media (max-height: 28em) {
+  .section-content-2,
+  .section-content-3 {
+    height: 150vh;
   }
 }
 
@@ -187,11 +216,63 @@
   }
 
   .section-content-1 {
-    height: 50vh;
+    height: 100vh;
   }
 
   .btn-mobile-nav {
     display: block;
+    z-index: 70;
+    color: var(--color-brand--1);
+    padding: 1rem;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(-100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 60;
+    transition: all 1s ease-out;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-menu a {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .nav-menu-open .nav-menu {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+    backdrop-filter: blur(10px);
+    background: transparent;
+  }
+
+  .nav-menu-open .mobile-icons[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-menu-open .mobile-icons[name="menu-outline"] {
+    display: none;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  .sticky-nav {
+    width: auto;
   }
 }
 
