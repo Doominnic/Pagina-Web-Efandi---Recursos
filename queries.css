@@ -245,6 +245,10 @@
     visibility: hidden;
   }
 
+  .efandi-logo-nav {
+    height: 5rem;
+  }
+
   .nav-menu a {
     font-size: 6rem;
     margin-bottom: 2rem;
