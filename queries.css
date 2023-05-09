@@ -247,6 +247,7 @@
 
   .efandi-logo-nav {
     height: 5rem;
+    width: auto;
   }
 
   .nav-menu a {
