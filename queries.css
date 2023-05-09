@@ -149,6 +149,11 @@
   .venues-logos a img {
     width: 10rem;
   }
+
+  .efandi-logo-nav {
+    height: 13rem;
+    width: auto;
+  }
 }
 
 /*******************************/
@@ -158,6 +163,11 @@
 @media (max-width: 48em) {
   .efandi-content-1 {
     height: 70rem;
+  }
+
+  .efandi-logo-nav {
+    height: 11.5rem;
+    width: auto;
   }
 }
 
@@ -186,6 +196,10 @@
 @media (max-width: 30em) {
   html {
     font-size: 37.5%;
+  }
+
+  .sticky-nav {
+    padding: 2rem 2rem;
   }
 
   .banner-venues {
@@ -246,7 +260,7 @@
   }
 
   .efandi-logo-nav {
-    height: 7rem;
+    height: 10rem;
     width: auto;
   }
 
@@ -254,8 +268,12 @@
     height: 2rem;
   }
 
+  .sm-menu {
+    gap: 2rem;
+  }
+
   .mobile-icons {
-    height: 2rem;
+    height: 3rem;
   }
 
   .nav-menu a {
