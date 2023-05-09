@@ -246,8 +246,16 @@
   }
 
   .efandi-logo-nav {
-    height: 5rem;
+    height: 7rem;
     width: auto;
+  }
+
+  .sm-menu a img {
+    height: 2rem;
+  }
+
+  .mobile-icons {
+    height: 2rem;
   }
 
   .nav-menu a {
