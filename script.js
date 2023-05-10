@@ -132,7 +132,7 @@ const carousel = document.querySelector(".carousel");
 const firstImg = carousel.querySelectorAll(".logo")[0];
 const arrowIcons = document.querySelectorAll(".wrapper ion-icon");
 
-let firstImgWidth = firstImg.clientWidth + 60;
+let firstImgWidth = firstImg.clientWidth + 150;
 console.log(firstImgWidth);
 
 arrowIcons.forEach(icon => {
