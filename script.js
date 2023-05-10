@@ -141,7 +141,6 @@ arrowIcons.forEach(icon => {
   });
 });
 
-/*
 let isDragStart = false,
   prevPageX,
   prevScrollLeft;
@@ -166,4 +165,3 @@ const dragStop = () => {
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 carousel.addEventListener("mouseup", dragStop);
-*/
