@@ -104,10 +104,18 @@ links.forEach(link => {
 const navMenu = document.querySelector(".header");
 const menuButton = document.querySelector(".btn-mobile-nav");
 const menuLinks = document.querySelector(".nav-menu").querySelectorAll("a");
+const sectionContainer = document.querySelectorAll("section");
 
 menuButton.addEventListener("click", e => {
   e.preventDefault();
   navMenu.classList.toggle("nav-menu-open");
+});
+
+sectionContainer.forEach(function (container) {
+  menuButton.addEventListener("click", e => {
+    e.preventDefault();
+    container.classList.toggle("blur-filter");
+  });
 });
 
 menuLinks.forEach(function (link) {
@@ -116,3 +124,46 @@ menuLinks.forEach(function (link) {
     navMenu.classList.remove("nav-menu-open");
   });
 });
+
+/////////////////////////////////////////////////////////////////
+// CAROUSEL //
+
+const carousel = document.querySelector(".carousel");
+const firstImg = carousel.querySelectorAll(".logo")[0];
+const arrowIcons = document.querySelectorAll(".wrapper ion-icon");
+
+let firstImgWidth = firstImg.clientWidth + 20;
+console.log(firstImgWidth);
+
+arrowIcons.forEach(icon => {
+  icon.addEventListener("click", () => {
+    carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+  });
+});
+
+/*
+let isDragStart = false,
+  prevPageX,
+  prevScrollLeft;
+
+const dragStart = e => {
+  isDragStart = true;
+  prevPageX = e.pageX;
+  prevScrollLeft = carousel.scrollLeft;
+};
+
+const dragging = e => {
+  if (!isDragStart) return;
+  e.preventDefault();
+  let positionDiff = e.pageX - prevPageX;
+  carousel.scrollLeft = prevScrollLeft - positionDiff;
+};
+
+const dragStop = () => {
+  isDragStart = false;
+};
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+carousel.addEventListener("mouseup", dragStop);
+*/

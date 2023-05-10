@@ -531,6 +531,10 @@ header {
   margin-bottom: -6rem;
 }
 
+.wrapper {
+  display: none;
+}
+
 /*
 @-webkit-keyframes banner-venue-animation {
   from {
