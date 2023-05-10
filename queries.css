@@ -187,6 +187,14 @@
   .section-content-3 {
     height: 150vh;
   }
+
+  .efandi-content-1 {
+    height: 50vh;
+  }
+
+  .section-content-4 {
+    height: 90vh;
+  }
 }
 
 /*******************************/
@@ -213,7 +221,7 @@
   }
 
   .venue-text {
-    font-size: 9rem;
+    font-size: 25rem;
   }
 
   .venues-logos a img {
@@ -221,7 +229,7 @@
   }
 
   .efandi-content-1 {
-    height: 70rem;
+    height: 90rem;
   }
 
   .venue-banner {
@@ -230,7 +238,7 @@
   }
 
   .section-content-1 {
-    height: 100vh;
+    height: 80vh;
   }
 
   .btn-mobile-nav {
@@ -262,6 +270,7 @@
   .efandi-logo-nav {
     height: 10rem;
     width: auto;
+    transform: translateX(-40%);
   }
 
   .sm-menu a img {
@@ -304,6 +313,18 @@
 
   .sticky-nav {
     width: auto;
+  }
+
+  .grid-6 p {
+    margin-left: 4rem;
+  }
+
+  .section-content-3 {
+    height: 60vh;
+  }
+
+  .venues-logos {
+    margin-top: -19rem;
   }
 }
 
