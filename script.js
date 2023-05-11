@@ -29,6 +29,7 @@ const obs = new IntersectionObserver(
       document.querySelectorAll(".sm-icon").forEach(function (icon) {
         icon.classList.add("on");
       });
+
       document.querySelector(".nav-menu").classList.add("on");
     }
 
@@ -38,6 +39,7 @@ const obs = new IntersectionObserver(
       document.querySelectorAll(".sm-icon").forEach(function (icon) {
         icon.classList.remove("on");
       });
+
       document.querySelector(".nav-menu").classList.remove("on");
     }
   },
@@ -55,10 +57,12 @@ const obsSectionOne = new IntersectionObserver(
     const ent = entries[0];
     if (ent.isIntersecting === true) {
       document.querySelector(".header").classList.add("blue-menu");
+      document.querySelector(".btn-mobile-nav").classList.add("blue-menu");
     }
 
     if (ent.isIntersecting === false) {
       document.querySelector(".header").classList.remove("blue-menu");
+      document.querySelector(".btn-mobile-nav").classList.remove("blue-menu");
     }
   },
   {
@@ -122,6 +126,7 @@ menuLinks.forEach(function (link) {
   link.addEventListener("click", e => {
     e.preventDefault();
     navMenu.classList.remove("nav-menu-open");
+    sectionContainer.classList.remove("blur-filter");
   });
 });
 
@@ -140,6 +145,8 @@ arrowIcons.forEach(icon => {
     carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
   });
 });
+
+// Still deciding if leaving this functionality. Not working in mobile
 
 let isDragStart = false,
   prevPageX,
