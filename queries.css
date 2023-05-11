@@ -295,7 +295,7 @@
 
   .efandi-content-1 {
     height: 75rem;
-    margin-top: -3rem;
+    margin-top: -4rem;
   }
 
   .venue-banner {
@@ -390,6 +390,10 @@
 
   .grid-6 p {
     margin-left: 4rem;
+  }
+
+  #right {
+    margin-left: -1.5rem;
   }
 
   .section-content-3 {
