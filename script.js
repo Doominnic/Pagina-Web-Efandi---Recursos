@@ -57,12 +57,12 @@ const obsSectionOne = new IntersectionObserver(
     const ent = entries[0];
     if (ent.isIntersecting === true) {
       document.querySelector(".header").classList.add("blue-menu");
-      document.querySelector(".btn-mobile-nav").classList.add("blue-menu");
+      document.querySelector(".btn-mobile-nav").classList.add("mobile-icon");
     }
 
     if (ent.isIntersecting === false) {
       document.querySelector(".header").classList.remove("blue-menu");
-      document.querySelector(".btn-mobile-nav").classList.remove("blue-menu");
+      document.querySelector(".btn-mobile-nav").classList.remove("mobile-icon");
     }
   },
   {

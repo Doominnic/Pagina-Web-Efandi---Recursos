@@ -254,7 +254,7 @@
     font-size: 37.5%;
   }
 
-  .blue-menu {
+  header .blue-menu {
     background-color: white !important;
   }
 
@@ -262,12 +262,16 @@
     color: var(--color-brand--1) !important;
   }
 
-  .blue-menu ion-icon {
-    filter: grayscale(100) contrast(0) brightness(0.3) !important;
+  .blue-menu div img {
+    filter: none !important;
   }
 
   .sticky-nav {
     padding: 2rem 2rem;
+  }
+
+  .header .blue-menu {
+    background: white;
   }
 
   .banner-venues {
