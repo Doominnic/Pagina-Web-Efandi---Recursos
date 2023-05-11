@@ -258,6 +258,10 @@
     background-color: white !important;
   }
 
+  .blue-menu div a {
+    color: var(--color-brand--1) !important;
+  }
+
   .blue-menu ion-icon {
     filter: grayscale(100) contrast(0) brightness(0.3) !important;
   }
@@ -316,7 +320,7 @@
     justify-content: center;
     flex-direction: column;
     z-index: 60;
-    transition: all 1s ease-out;
+    transition: all 0.4s ease-out;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -325,7 +329,7 @@
   .efandi-logo-nav {
     height: 10rem;
     width: auto;
-    transform: translateX(-40%);
+    transform: translateX(-30%);
   }
 
   .sm-menu a img {
@@ -350,7 +354,7 @@
     pointer-events: auto;
     visibility: visible;
 
-    background-color: #00000078;
+    background-color: #000000ab;
   }
 
   .blur-filter {

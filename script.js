@@ -120,13 +120,19 @@ sectionContainer.forEach(function (container) {
     e.preventDefault();
     container.classList.toggle("blur-filter");
   });
+
+  menuLinks.forEach(function (link) {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      container.classList.remove("blur-filter");
+    });
+  });
 });
 
 menuLinks.forEach(function (link) {
   link.addEventListener("click", e => {
     e.preventDefault();
     navMenu.classList.remove("nav-menu-open");
-    sectionContainer.classList.remove("blur-filter");
   });
 });
 
