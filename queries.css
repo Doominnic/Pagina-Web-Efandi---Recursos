@@ -407,6 +407,35 @@
 
   .wrapper {
     max-width: 40rem;
+    margin-left: -1rem;
+  }
+
+  #myVideo {
+    display: none;
+  }
+
+  .hero-section {
+    background-color: #080e13;
+    height: 90vh;
+  }
+
+  .efandi-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20rem;
+  }
+
+  .scroll-down {
+    top: 65%;
+  }
+
+  .efandi-logo img {
+    width: 120%;
+  }
+
+  .header {
+    background-color: #080e13;
   }
 }
 
