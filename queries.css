@@ -187,6 +187,10 @@
     scroll-behavior: smooth;
   }
 
+  .carousel .dragging {
+    scroll-behavior: auto;
+  }
+
   .wrapper ion-icon {
     height: 4rem;
     width: 4rem;
@@ -208,6 +212,10 @@
     object-fit: contain;
     width: calc(100% / 3);
     margin-left: 2rem;
+  }
+
+  .carousel .dragging a img {
+    pointer-events: none;
   }
 
   .carousel a:first-child img {
