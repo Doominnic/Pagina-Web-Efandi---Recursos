@@ -286,6 +286,7 @@
 
   .venue-text {
     font-size: 20rem;
+    margin-left: -4rem;
   }
 
   .venues-logos a img {
