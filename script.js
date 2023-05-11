@@ -163,7 +163,7 @@ arrowIcons.forEach(icon => {
 
 const autoSlide = () => {
   positionDiff = Math.abs(positionDiff);
-  let firstImgWidth = firstImg.clientWidth + 160;
+  let firstImgWidth = firstImg.clientWidth + 20;
   let valDifference = firstImgWidth - positionDiff;
 
   if (carousel.scrollLeft > prevScrollLeft) {
