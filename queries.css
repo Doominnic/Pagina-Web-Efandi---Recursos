@@ -324,7 +324,7 @@
     justify-content: center;
     flex-direction: column;
     z-index: 60;
-    transition: all 0.4s ease-out;
+    transition: all 0.3s ease-out;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -333,7 +333,7 @@
   .efandi-logo-nav {
     height: 10rem;
     width: auto;
-    transform: translateX(-30%);
+    transform: translateX(-15%);
   }
 
   .sm-menu a img {
@@ -395,7 +395,7 @@
 
   .sticky {
     backdrop-filter: none;
-    background-color: var(--color-brand--2);
+    background-color: #0012ffa3;
   }
 
   .carousel a img {
