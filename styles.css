@@ -294,7 +294,7 @@ header {
   height: 85rem;
   width: 2458rem;
   background: url(2/CopyFondo.png) repeat-x;
-  animation: move 30s linear infinite;
+  animation: move 60s linear infinite;
   background-size: contain;
   /*filter: drop-shadow(2px 4px 6px black);*/
   margin-top: 4.5%;
@@ -311,12 +311,12 @@ header {
 
 @-webkit-keyframes move {
   from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  to {
     -webkit-transform: translate3d(-819rem, 0, 0);
     transform: translate3d(-819rem, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
