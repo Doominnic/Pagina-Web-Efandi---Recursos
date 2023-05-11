@@ -295,6 +295,7 @@
 
   .efandi-content-1 {
     height: 75rem;
+    margin-top: -5rem;
   }
 
   .venue-banner {
@@ -304,6 +305,11 @@
 
   .section-content-1 {
     height: 80vh;
+  }
+
+  .inner-cursor,
+  .outer-cursor {
+    display: none;
   }
 
   .btn-mobile-nav {
