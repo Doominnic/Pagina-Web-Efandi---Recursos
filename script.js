@@ -161,25 +161,11 @@ arrowIcons.forEach(icon => {
   });
 });
 
-const autoSlide = () => {
-  positionDiff = Math.abs(positionDiff);
-  let firstImgWidth = firstImg.clientWidth + 160;
-  let valDifference = firstImgWidth - positionDiff;
-
-  if (carousel.scrollLeft > prevScrollLeft) {
-    return (carousel.scrollLeft +=
-      positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff);
-  }
-  carousel.scrollLeft -=
-    positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-};
-
 // Still deciding if leaving this functionality. Not working in mobile
 
 let isDragStart = false,
   prevPageX,
-  prevScrollLeft,
-  positionDiff;
+  prevScrollLeft;
 
 const dragStart = e => {
   isDragStart = true;
@@ -191,14 +177,13 @@ const dragging = e => {
   if (!isDragStart) return;
   e.preventDefault();
   carousel.classList.add("dragging");
-  positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+  let positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
   carousel.scrollLeft = prevScrollLeft - positionDiff;
 };
 
 const dragStop = () => {
   isDragStart = false;
   carousel.classList.remove("dragging");
-  autoSlide();
 };
 
 carousel.addEventListener("mousedown", dragStart);
