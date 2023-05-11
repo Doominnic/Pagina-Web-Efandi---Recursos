@@ -294,7 +294,7 @@
   }
 
   .efandi-content-1 {
-    height: 80rem;
+    height: 85rem;
   }
 
   .venue-banner {
@@ -388,6 +388,7 @@
 
   .section-content-3 {
     height: 60vh;
+    align-items: center;
   }
 
   .venues-logos {
@@ -406,7 +407,7 @@
   }
 
   .wrapper {
-    max-width: 40rem;
+    max-width: 38rem;
     margin-left: -1rem;
   }
 
