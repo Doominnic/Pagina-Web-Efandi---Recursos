@@ -117,7 +117,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 4rem;
-  max-width: 220rem;
+  max-width: 260rem;
   width: 100%;
 }
 
@@ -228,7 +228,7 @@ header {
   justify-content: center;
   flex-direction: column;
   position: relative;
-  max-width: 220rem;
+  max-width: 260rem;
   width: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -268,7 +268,7 @@ header {
   height: 100vh;
   background-color: var(--color-brand--1);
   overflow: hidden;
-  max-width: 220rem;
+  max-width: 260rem;
   width: 100%;
   position: relative;
 }
@@ -337,7 +337,7 @@ header {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
   height: 120vh;
-  max-width: 220rem;
+  max-width: 260rem;
   width: 100%;
 }
 
@@ -418,7 +418,7 @@ header {
   background-color: black;
   display: flex;
   flex-direction: column;
-  max-width: 220rem;
+  max-width: 260rem;
   width: 100%;
   overflow: hidden;
   height: 100vh;
@@ -580,7 +580,7 @@ header {
   height: 50vh;
   background-color: var(--color-brand--1);
   position: relative;
-  max-width: 220rem;
+  max-width: 260rem;
   width: 100%;
   display: flex;
   align-items: center;
